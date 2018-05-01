@@ -1,0 +1,19 @@
+{
+  "name": "ryu-g.com",
+  "version": "1.0.0",
+  "description": "mypage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.pug"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "ryu-g",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3"
+  }
+}
