@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":";;;;;;;;AAAA;;AACA","file":"app.52cc9559.map","sourceRoot":"../src","sourcesContent":["import './style/main.sass';\nimport './script/*.js';"]}
