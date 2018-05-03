@@ -1,9 +1,93 @@
+$palets: (code: #333, dark: #555, gray: #EEE, blue: #5483ce, white: #FFF)
+
+@function palets($key)
+	@return map-get($palets, $key)
+
 p
-	color: #AAA
+	padding-left: 15px
+
+header, footer
+	text-align: center
+	padding: 10px
+
+h1
+	font-size: 20px
+	font-style: bold
+	color: palets(white)
+
+small
+	font-size: 15px
+	font-style: bold
+	color: palets(white)
 
 section
-	width: 900px
+	width: 980px
+	margin: 10px auto
 
+pre
+	background-color: palets(code)
+	color: palets(white)
+	padding: 20px
 
 .grid-box
-	display: grid;
+	display: grid
+	grid-template-columns: 200px 1fr
+	grid-gap: 10px
+	margin-bottom: 10px
+
+.table
+	display: grid
+	grid-template-columns: 50px 200px
+	grid-gap: 2px
+	.head
+		background-color: palets(dark)
+		color: palets(white)
+		padding: 5px
+		text-align: center
+	.val
+		background-color: palets(gray)
+		padding: 5px
+
+.list
+	background-color: palets(gray)
+	padding: .8em
+	.item
+		&:before
+			content: '・'
+	.tri
+		&:before
+			content: '▲'
+	.star
+		&:before
+			content: '★'
+
+.listAndContents
+	display: grid
+	grid-template-columns: 200px 1fr
+	grid-template-raws: 500px
+	.list
+		margin-right: 5px
+	.contentsBox
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		.box
+			margin: 5px
+			width: 100px
+			height: 100px
+			background-color: palets(dark)
+
+.gray
+	background-color: palets(gray)
+	p
+		color: palets(dark)
+
+.dark
+	background-color: palets(dark)
+	p
+		color: palets(gray)
+
+.blue
+	background-color: palets(blue)
+	p
+		color: palets(white)
